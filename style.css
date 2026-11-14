@@ -1,0 +1,21 @@
+:root{--bg:#F6F7FB;--ink:#1B1F3B;--muted:#5A6079;--accent:#5B4BDB;--mint:#2BB39A;--line:#D9DCEB;--card:#fff}
+@media (prefers-color-scheme:dark){:root{--bg:#12142A;--ink:#EEF0FA;--muted:#A3A9C6;--accent:#9A8DFF;--mint:#4FD1B8;--line:#2A2E52;--card:#1A1D3A}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:1.05rem/1.65 "Source Sans 3",system-ui,sans-serif}
+h1,h2,h3{font-family:"Bricolage Grotesque",system-ui,sans-serif;line-height:1.15;margin:0 0 .5em}
+h1{font-size:clamp(2.4rem,6vw,4rem)}h2{font-size:1.6rem;margin-top:2em}h3{font-size:1.2rem}
+a{color:var(--accent)}a:focus-visible{outline:3px solid var(--mint);outline-offset:2px}
+header{border-bottom:1px solid var(--line)}
+nav{max-width:60rem;margin:auto;padding:1rem 1.25rem;display:flex;flex-wrap:wrap;gap:.5rem 1.5rem;align-items:center}
+nav .brand{font:700 1.15rem "Bricolage Grotesque",sans-serif;color:var(--ink);text-decoration:none;margin-right:auto}
+nav a{color:var(--muted);text-decoration:none}nav a:hover,nav a[aria-current]{color:var(--ink);text-decoration:underline;text-decoration-color:var(--accent);text-underline-offset:6px}
+main{max-width:60rem;margin:auto;padding:3rem 1.25rem 4rem}
+p,li{max-width:68ch}.lead{font-size:1.3rem;color:var(--muted);max-width:44ch}
+.btn{display:inline-block;background:var(--accent);color:#fff;padding:.6rem 1.2rem;border-radius:6px;text-decoration:none;margin:.5rem .5rem 0 0}
+.btn.alt{background:transparent;color:var(--ink);border:1px solid var(--line)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr));gap:1.25rem;margin-top:1rem}
+.card{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--accent);padding:1.25rem;border-radius:4px}
+.card.wip{border-left-color:var(--mint)}.card a{font-weight:600}
+dl{display:grid;grid-template-columns:max-content 1fr;gap:.4rem 1.25rem}dt{font-weight:700}dd{margin:0}
+.ph{background:var(--card);border:2px dashed var(--line);padding:2.5rem 1rem;text-align:center;color:var(--muted);border-radius:4px}
+footer{border-top:1px solid var(--line);padding:1.5rem 1.25rem;text-align:center;color:var(--muted);font-size:.9rem}
