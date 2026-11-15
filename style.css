@@ -32,3 +32,8 @@ dt{font-weight:800;color:var(--rose)}dd{margin:0}
 footer{padding:2rem 1.25rem 2.5rem;text-align:center;color:var(--muted);font-size:.95rem}
 footer::before{content:"\273F  \273F  \273F";display:block;color:#D98E98;letter-spacing:.4em;margin-bottom:.3rem}
 @media (max-width:30rem){dl{grid-template-columns:1fr}dd{margin-bottom:.4rem}}
+.shots{display:grid;grid-template-columns:repeat(auto-fit,minmax(18rem,1fr));gap:1.5rem;margin:1rem 0}
+.shot{margin:0;background:var(--paper);border:2px solid var(--line);border-radius:14px;box-shadow:4px 4px 0 rgba(123,91,91,.25);overflow:hidden}
+.shot::before{content:"";display:block;height:1.7rem;background:var(--pink) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='58' height='18' viewBox='0 0 58 18'%3E%3Cg fill='%23F8E3E5' stroke='%237B5B5B' stroke-width='1.6'%3E%3Crect x='1' y='1' width='16' height='16' rx='3'/%3E%3Crect x='21' y='1' width='16' height='16' rx='3'/%3E%3Crect x='41' y='1' width='16' height='16' rx='3'/%3E%3C/g%3E%3Cpath d='M5 13h8M25 5h8v8h-8zM45 5l8 8M53 5l-8 8' stroke='%237B5B5B' stroke-width='1.6' fill='none'/%3E%3C/svg%3E") no-repeat right .6rem center/auto 1.05rem;border-bottom:2px solid var(--line)}
+.shot img{display:block;width:100%;height:auto}
+.shot figcaption{padding:.6rem 1rem .8rem;font-size:.95rem;color:var(--muted)}
