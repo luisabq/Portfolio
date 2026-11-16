@@ -33,3 +33,15 @@ dt{font-weight:600;color:var(--french)}dd{margin:0;color:var(--muted)}
 .shot{margin:0}.shot img{display:block;width:100%;height:auto}.shot figcaption{padding:.6rem 1rem .8rem;font-size:.92rem;color:var(--muted)}
 footer{padding:2rem 1.25rem 2.5rem;text-align:center;color:var(--powder);font-size:.9rem;background:var(--violet)}
 @media (max-width:30rem){dl{grid-template-columns:1fr}dd{margin-bottom:.4rem}}
+
+/* Portfolio completion improvements */
+.card .card-image-link{display:block;margin:0;text-decoration:none}
+.card-image{display:block;width:100%;aspect-ratio:16/9;object-fit:cover}
+.card .card-image-link + h3{margin-top:1.2rem}
+.back-link{margin:0 0 1.2rem;font-size:.9rem}
+.status-inline{display:inline-block;vertical-align:middle;padding:.2rem .55rem;border:1px solid var(--line);border-radius:99px;font-size:.8rem;font-weight:600;letter-spacing:0;white-space:nowrap}
+.shot img{max-height:28rem;object-fit:contain;background:#f5eee9}
+a:hover{text-decoration-thickness:2px}
+@media(max-width:40rem){main{padding-top:2.2rem}nav{gap:.25rem 1rem}nav .brand{width:100%;margin-bottom:.35rem}.hero svg{width:min(15rem,70%)}}
+
+.skip-link{position:absolute;left:1rem;top:-5rem;z-index:100;background:var(--paper);padding:.5rem 1rem}.skip-link:focus{top:.5rem}
