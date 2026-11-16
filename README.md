@@ -1,19 +1,17 @@
-# Portfolio website
+# Portfolio website — Luisa Brizolim Quesada
 
-Static HTML/CSS site intended for GitHub Pages. No build process is required.
+A static, multi-page HTML/CSS portfolio for GitHub Pages.
 
 ## Publish
-1. Unzip the package. Copy **the contents of the `portfolio` folder** to the root of your GitHub repository (not the outer folder).
-2. Commit and push. In GitHub, open Settings → Pages. Set the source to Deploy from a branch, then `main` and `/ (root)`.
-3. Open `https://luisabq.github.io/Portfolio/` (or the configured custom URL).
 
-## Before submitting professionally
-- Replace the work-in-progress text on The Keeper, Pizza Cutter, and fantasy environment pages with your confirmed progress and your own screenshots. The modeling page now includes your flower images.
-- The résumé PDF is now included at `BrizolimQuesada_Resume.pdf`; replace it whenever the résumé changes.
-- Double-check all project role descriptions, team sizes, dates and external itch.io links.
-- Update descriptions as each project advances.
+Upload the **contents** of this folder to the root of your `Portfolio` repository, with `index.html` at the repository root. In GitHub Settings → Pages, deploy from the intended branch and `/ (root)` directory. Check `https://luisabq.github.io/Portfolio/` from a signed-out browser after GitHub Pages publishes.
 
-All page links are relative so they work under a GitHub Pages project subpath. No JavaScript or external build dependencies.
+## Structure
 
-## Stylized Island Diorama
-A detailed case study is now at `substance-study.html` and linked from the home and projects pages. All supplied screenshots are included locally in `images/island/`. Do not publish UCF-only image links as public assets.
+`index.html` is the homepage, `projects.html` lists the projects, and each case study is a separate HTML page. `images/` contains locally hosted visuals; `style.css` controls the layout. The résumé PDF, Keeper Gantt chart, and Moo-F-O production plan are included as supporting files.
+
+## Attribution and accuracy
+
+Game screenshots, UI artwork, and planning boards from group projects are team work. The site distinguishes Luisa's specific contributions from shared screenshots. The original UI wireframes for **Ashra** and **Moo-F-O** were created by other team members. WIP material is labeled as planned or in progress.
+
+Do not include full private team timesheets on a public website. Update claimed task completions, team sizes, credits, and links only when verified.

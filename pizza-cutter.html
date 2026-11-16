@@ -1,26 +1,37 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
 <title>Pizza Cutter (WIP) | Luisa Brizolim Quesada</title>
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
-<meta name="description" content="Portfolio of Luisa Brizolim Quesada: technical art, game production, UI/UX and 3D environment projects.">
+<link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="style.css" rel="stylesheet"/>
+<meta content="Portfolio of Luisa Brizolim Quesada: technical art, game production, UI/UX and 3D environment projects." name="description"/>
 </head>
 <body>
 <a class="skip-link" href="#main-content">Skip to content</a>
 <header><nav>
 <a class="brand" href="index.html">Luisa Brizolim Quesada</a>
 <a href="about.html">About</a>
-<a href="projects.html" aria-current="page">Projects</a>
+<a aria-current="page" href="projects.html">Projects</a>
 <a href="resume.html">Resume</a>
 <a href="contact.html">Contact</a>
 </nav></header>
 <main id="main-content">
-<p class="back-link"><a href="projects.html">← All projects</a></p><h1>Pizza Cutter <span class="status-inline">In progress</span></h1><p class="lead">A student casual-game project, with a focus on approachable interactions and readable player-facing UI.</p><dl><dt>Course</dt><dd>Casual Game Production</dd><dt>Role</dt><dd>Producer · UX/UI design</dd><dt>Timeline</dt><dd>Started August 2026</dd><dt>Team</dt><dd>7 people</dd><dt>Tools</dt><dd>Unity (engine), Maya (models), Substance Painter and Designer (textures), Blender (animation), ClickUp (organization)</dd><dt>Status</dt><dd>In progress</dd></dl><h2>My contributions</h2><ul><li>Plan work and coordinate production priorities.</li><li>Design UI layouts, menus and player-facing feedback.</li><li>Review the game experience for clarity and usability.</li></ul><h2>Process</h2><p>Production work includes iterating on layouts and separating UI panels so the game interface remains clear and manageable as the prototype evolves.</p><h2>Current status</h2><p>Work in progress. Add screenshots, prototypes and testing observations after the next design review.</p>
+<p class="back-link"><a href="projects.html">← All projects</a></p>
+<p class="eyebrow">Academic game production · Work in progress</p>
+<h1>Pizza Cutter <span class="status-inline">In progress</span></h1>
+<p class="lead">A seven-person Unity mobile game about surviving a chaotic pizza-restaurant shift. I primarily handled production organization and UI implementation, keeping tasks organized while integrating player-facing interfaces into the game.</p>
+<dl><dt>Project</dt><dd>Pizza Cutter (named <em>Pizza Slicer</em> in the current team design documents)</dd><dt>Role</dt><dd>Producer · Unity UI implementation</dd><dt>Team</dt><dd>7-person academic team</dd><dt>Engine</dt><dd>Unity · Android mobile target</dd><dt>Workflow</dt><dd>ClickUp, GitHub, Maya, Blender, Substance Painter / Designer</dd><dt>Timeline</dt><dd>August 2026 – present (WIP)</dd></dl>
+<section><h2>The game and design goals</h2><p><em>Pizza Cutter</em> is a portrait-oriented, top-down casual action game in which a pizza worker battles increasingly demanding customers using food-themed weapons. Its core loop is move, fight, survive, collect XP, and choose upgrades. The team’s design documents emphasize touch-friendly controls, readable combat feedback, and a bright low-poly aesthetic.</p><p class="process-caption">The GDD and TDD describe the intended design and planned features, not a guarantee that every weapon, area, or system is finished.</p>
+<div class="shots"><figure class="shot"><img alt="Team art style guide page showing pizzeria environment blockout" loading="lazy" src="images/pizza/restaurant-blockout.webp"/><figcaption>Team environment blockout and visual planning, excerpted from the Art Style Guide.</figcaption></figure><figure class="shot"><img alt="Team character and food-themed weapon examples from the style guide" loading="lazy" src="images/pizza/character-weapons.webp"/><figcaption>Team player-character and weapon direction, shown for project context.</figcaption></figure></div></section>
+<section><h2>What I actually worked on</h2><ul><li><strong>Production organization:</strong> Organized tasks and followed feature progress in ClickUp, with work grouped by programming, art, and level development.</li><li><strong>Milestone visibility:</strong> Used an MVP section and later feature breakdowns to help track what the team was building next.</li><li><strong>UI implementation:</strong> Integrated player-facing UI into Unity, focusing on the HUD and menu interactions rather than claiming ownership of every visual mockup.</li><li><strong>Team coordination:</strong> Followed up with contributors and kept priorities and tasks visible across the seven-person team.</li></ul></section>
+<section><h2>Production evidence: ClickUp board</h2><p>These screenshots show the team's task hierarchy, with an MVP section and a later in-progress feature grouping. Tasks were divided into programming, art, and level needs so each area could be followed separately.</p><div class="shots"><figure class="shot"><img alt="ClickUp completed MVP category broken into player, mobile control, weapon, and enemy subtasks" loading="lazy" src="images/pizza/clickup-2.webp"/><figcaption>ClickUp MVP tracking — a completed top-level milestone with nested implementation tasks. Individual subtasks have their own status.</figcaption></figure><figure class="shot"><img alt="ClickUp feature three status list showing programming, art, and level tasks" loading="lazy" src="images/pizza/clickup-1.webp"/><figcaption>Later feature planning — programming, art, and level workstreams grouped beneath the same milestone.</figcaption></figure></div><p class="process-caption">These are snapshots of the team workspace. A completed parent group does not necessarily mean every visible subtask is complete.</p></section>
+<section><h2>UI implementation and iteration</h2><p>The UI needs to remain readable on a small, portrait-oriented screen while presenting health, XP, stage progress, upgrades, and menus. I worked on implementing interface behavior and organizing Unity UI elements so players can navigate the game without the interface overwhelming gameplay.</p><div class="shots"><figure class="shot"><img alt="Team UI mockups showing pause button, paused menu, level selection and game over screen" loading="lazy" src="images/pizza/ui-mockups.webp"/><figcaption>Team UI mockups from the Art Style Guide — reference material for interface implementation, not all my original illustration work.</figcaption></figure></div><p>Separating the menus and HUD into manageable UI pieces has been an important part of supporting responsive layouts and easier iteration as the game changes.</p></section>
+<section><h2>What I am learning</h2><p>Working across production and UI implementation has shown me how closely interface work depends on the game systems around it. Clear ownership and structured ClickUp tasks make it easier to coordinate those dependencies, while testing the UI in context helps identify layout and interaction issues before later builds.</p><h2>Current status and next evidence</h2><p>The game is in active production. The screenshots document team planning and interface direction; final gameplay, device testing results, and release outcomes will be added when verified.</p></section>
 </main>
-<footer>&copy; 2026 Luisa Brizolim Quesada</footer>
+<footer>© 2026 Luisa Brizolim Quesada</footer>
 </body>
 </html>
