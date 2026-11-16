@@ -1,26 +1,56 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Substance Designer Study | Luisa Brizolim Quesada</title>
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
-<meta name="description" content="Portfolio of Luisa Brizolim Quesada: technical art, game production, UI/UX and 3D environment projects.">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Stylized Island Diorama | Procedural Materials | Luisa Brizolim Quesada</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="style.css" rel="stylesheet"/>
+<meta content="Portfolio of Luisa Brizolim Quesada: technical art, game production, UI/UX and 3D environment projects." name="description"/>
 </head>
 <body>
 <a class="skip-link" href="#main-content">Skip to content</a>
 <header><nav>
 <a class="brand" href="index.html">Luisa Brizolim Quesada</a>
 <a href="about.html">About</a>
-<a href="projects.html" aria-current="page">Projects</a>
+<a aria-current="page" href="projects.html">Projects</a>
 <a href="resume.html">Resume</a>
 <a href="contact.html">Contact</a>
 </nav></header>
 <main id="main-content">
-<p class="back-link"><a href="projects.html">← All projects</a></p><h1>Substance Designer Study</h1><p class="lead">A collection of procedural-material exercises focused on stylized surfaces and creating reusable material workflows.</p><dl><dt>Focus</dt><dd>Technical art · Procedural materials</dd><dt>Tools</dt><dd>Substance Designer · Unreal Engine 5</dd><dt>Format</dt><dd>Independent practice</dd></dl><h2>Goal</h2><p>Practice translating material references into procedural node graphs, then evaluate surface definition and readability in a game-engine context.</p><h2>What I explored</h2><ul><li>Stylized wood bark, stone and moss.</li><li>Balancing height, roughness, normals and base color.</li><li>Exporting and reviewing material outputs in Unreal Engine.</li></ul><h2>Workflow</h2><p>Build material forms from nodes, layer in surface variation, and check how lighting and color affect the result when imported into the engine.</p><h2>Next steps</h2><p>Publish individual breakdowns with material renders, key nodes and before-and-after iterations.</p>
+<p class="back-link"><a href="projects.html">← All projects</a></p>
+<p class="eyebrow">Technical art / Personal specialization &amp; research</p>
+<h1>Stylized Island Diorama</h1>
+<p class="lead">Five procedural materials built from scratch in Substance 3D Designer, with supporting meshes in Maya and final scene assembly and lighting in Unreal Engine 5.</p>
+<dl><dt>Role</dt><dd>Procedural material artist · 3D modeling · Environment assembly</dd><dt>Project type</dt><dd>Individual specialization &amp; research project</dd><dt>Tools</dt><dd>Adobe Substance 3D Designer · Autodesk Maya · Unreal Engine 5 · Substance 3D plugin</dd><dt>Deliverables</dt><dd>Water, sand, brick, wood and fire materials · Stylized island diorama</dd></dl>
+<div class="project-highlights"><div><strong>5</strong><span>materials created</span></div><div><strong>3</strong><span>core applications</span></div><div><strong>1</strong><span>real-time diorama</span></div></div>
+<h2>Final result</h2>
+<p>The final diorama brings together a compact sandy island, a stylized tower, a campfire and surrounding water. I designed the materials first, then shaped the scene's meshes and UV layouts around how those materials needed to tile.</p>
+<div aria-label="Final render image placement guide" class="shots island-feature-gallery"><figure class="shot island-shot"><img alt="Full stylized island diorama in Unreal Engine 5, with water, sand, stone tower and campfire" decoding="async" loading="eager" src="images/island/island-overview.webp"/><figcaption>Final island diorama: all five materials in the same scene</figcaption></figure><figure class="shot island-shot"><img alt="Close view of the campfire and the textured stone tower" decoding="async" loading="lazy" src="images/island/island-fire-and-tower.webp"/><figcaption>Campfire and tower: wood, fire, brick and sand materials</figcaption></figure></div><div class="shots"><figure class="shot island-shot"><img alt="Close-up of the stylized blue water and sandy shoreline" decoding="async" loading="lazy" src="images/island/island-water-close.webp"/><figcaption>Water and sand materials under Unreal Engine lighting</figcaption></figure><figure class="shot island-shot"><img alt="Close-up of the procedural brick material on the cylindrical tower" decoding="async" loading="lazy" src="images/island/island-brick-close.webp"/><figcaption>Tower bricks: warped forms, bevels and surface wear</figcaption></figure><figure class="shot island-shot"><img alt="Close-up of the alpha-masked flame material with textured logs and sand" decoding="async" loading="lazy" src="images/island/island-fire-close.webp"/><figcaption>Static alpha-masked flame on a double-sided plane</figcaption></figure></div>
+
+<h2>Procedural material breakdown</h2>
+<p>Each surface started as a node-based graph in Substance Designer. I combined shape generation, warping, layered height information and color variation to push the materials toward a readable, stylized look.</p>
+<div class="material-list">
+<section class="material-entry" id="water"><div><p class="eyebrow">01 / Water</p><h3>Soft, stylized waves</h3><p>Tile Sampler established repeating shapes, while blended noise, Directional Warp and Blur HQ softened the pattern into wave forms. I exported Base Color, Normal, Roughness, Metallic, AO and Height outputs.</p></div><figure class="shot island-graph"><img alt="Substance Designer preview and node graph for the blue stylized water material" decoding="async" loading="lazy" src="images/island/island-water-graph.webp"/><figcaption>Water: material preview and procedural node graph</figcaption></figure></section>
+<section class="material-entry" id="sand"><div><p class="eyebrow">02 / Sand</p><h3>Dunes, rocks and starfish</h3><p>This was my most complex graph. I used Tile Sampler, Slope Blur, Directional Noise and Directional Warp to form dunes. Layered height masks placed rocks and starfish procedurally; noise and grayscale gradients added warm color variation.</p></div><figure class="shot island-graph"><img alt="Substance Designer preview and large node graph for sand with rocks and starfish" decoding="async" loading="lazy" src="images/island/island-sand-graph.webp"/><figcaption>Sand: dunes, rocks, starfish and layered height nodes</figcaption></figure></section>
+<section class="material-entry" id="brick"><div><p class="eyebrow">03 / Brick</p><h3>Weathered tower surface</h3><p>I generated the brick arrangement with Tile Sampler, then distorted the shapes to avoid a perfectly uniform pattern. Curvature-driven color variation and height details gave the stones their bevels and worn surface.</p></div><figure class="shot island-graph"><img alt="Substance Designer preview and node graph for the stylized brick material" decoding="async" loading="lazy" src="images/island/island-brick-graph.webp"/><figcaption>Brick: preview and graph for tower material</figcaption></figure></section>
+<section class="material-entry" id="wood"><div><p class="eyebrow">04 / Wood</p><h3>Stylized grain for campfire logs</h3><p>Tile Sampler, Directional Warp and Perlin noise helped build the grain direction and variation. I used color gradients to add warmth without making the surface visually noisy.</p></div><figure class="shot island-graph"><img alt="Substance Designer preview and graph for the stylized wood grain material" decoding="async" loading="lazy" src="images/island/island-wood-graph.webp"/><figcaption>Wood: campfire log material and procedural graph</figcaption></figure></section>
+<section class="material-entry" id="fire"><div><p class="eyebrow">05 / Fire</p><h3>Static cutout flame</h3><p>I created a static fire alpha sheet from cutout shapes and gradients, then used a double-sided, opacity-masked plane in Unreal. This was a simple graphic solution, not an animated particle effect.</p></div><figure class="shot island-graph"><img alt="Substance Designer preview and node graph for a static stylized fire texture" decoding="async" loading="lazy" src="images/island/island-fire-graph.webp"/><figcaption>Fire: static alpha-mask material and graph</figcaption></figure></section>
+</div>
+<h2>Modeling and UVs in Maya</h2>
+<p>Rather than build a complex scene first and search for textures afterward, I made straightforward meshes that complemented the procedural surfaces. The water and sand use circular planes with evenly scaled UVs. The tower uses a cylindrical mesh and vertical UV strips for consistent brick tiling; campfire logs use cylinders with straight UVs, and the fire uses a square-mapped plane.</p>
+<div class="shots"><figure class="shot island-shot"><img alt="Maya wireframe view of the circular water and sand meshes, tower and fire plane" decoding="async" loading="lazy" src="images/island/island-maya-wireframe.webp"/><figcaption>Maya blockout: simple meshes with UV layouts designed for tiling</figcaption></figure><figure class="shot island-shot"><img alt="Five Unreal Engine 5 material editor setups for water, sand, wood, fire and brick" decoding="async" loading="lazy" src="images/island/island-unreal-materials.webp"/><figcaption>Unreal Engine 5: imported textures and material setup</figcaption></figure></div>
+<h2>Integration in Unreal Engine 5</h2>
+<p>I imported the <code>.sbsar</code> assets through the Substance 3D plugin and set up Unreal materials manually. The primary surfaces used Base Color, Normal, Roughness, Ambient Occlusion and Height data; the fire plane used Base Color and an Opacity Mask. Nanite was enabled on the water, sand, tower and wood meshes during the height-detail experiments.</p>
+<p>For the final presentation I used warm directional lighting, skylight fill and post-process adjustments to unify the materials. This stage was important because the surfaces looked different under game-engine lighting than they did in Designer.</p>
+<h2>Challenges and takeaways</h2>
+<ul><li><strong>Keeping complex graphs organized:</strong> The sand graph, in particular, needed careful layering so dunes and small objects remained readable.</li><li><strong>Using height information deliberately:</strong> I experimented with how surface definition carried into the Unreal scene, rather than relying on color alone.</li><li><strong>UVs affected the visual result:</strong> Straight, evenly scaled UVs made the procedural materials easier to apply predictably.</li><li><strong>Building materials before geometry:</strong> Starting with the surface language helped the diorama feel cohesive despite its simple models.</li></ul>
+<h2>What I would improve next</h2>
+<p>I would refine individual material graphs for easier reuse, further test how height details behave in-engine, and create a cleaner presentation sheet showing each material alongside its graph and mesh UVs. For the fire, animation would be a natural next step if the scene needed more motion.</p>
+<p class="back-link"><a href="projects.html">← Back to projects</a></p>
 </main>
-<footer>&copy; 2026 Luisa Brizolim Quesada</footer>
+<footer>© 2026 Luisa Brizolim Quesada</footer>
 </body>
 </html>

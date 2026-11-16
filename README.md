@@ -8,9 +8,12 @@ Static HTML/CSS site intended for GitHub Pages. No build process is required.
 3. Open `https://luisabq.github.io/Portfolio/` (or the configured custom URL).
 
 ## Before submitting professionally
-- Replace the work-in-progress text on The Keeper, Pizza Cutter, fantasy environment, and modeling pages with your confirmed progress and your own screenshots.
-- Add `resume.pdf` to the repository root and reinstate the Download PDF button on `resume.html`. The original archive referenced this missing file; this version avoids publishing a broken link.
+- Replace the work-in-progress text on The Keeper, Pizza Cutter, and fantasy environment pages with your confirmed progress and your own screenshots. The modeling page now includes your flower images.
+- The résumé PDF is now included at `BrizolimQuesada_Resume.pdf`; replace it whenever the résumé changes.
 - Double-check all project role descriptions, team sizes, dates and external itch.io links.
 - Update descriptions as each project advances.
 
 All page links are relative so they work under a GitHub Pages project subpath. No JavaScript or external build dependencies.
+
+## Stylized Island Diorama
+A detailed case study is now at `substance-study.html` and linked from the home and projects pages. All supplied screenshots are included locally in `images/island/`. Do not publish UCF-only image links as public assets.

@@ -45,3 +45,46 @@ a:hover{text-decoration-thickness:2px}
 @media(max-width:40rem){main{padding-top:2.2rem}nav{gap:.25rem 1rem}nav .brand{width:100%;margin-bottom:.35rem}.hero svg{width:min(15rem,70%)}}
 
 .skip-link{position:absolute;left:1rem;top:-5rem;z-index:100;background:var(--paper);padding:.5rem 1rem}.skip-link:focus{top:.5rem}
+
+/* Stylized Island case study */
+.eyebrow{color:var(--french);font-size:.82rem;font-weight:700;letter-spacing:.09em;text-transform:uppercase}
+.project-highlights{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.8rem;margin:1.6rem 0}
+.project-highlights>div{background:var(--paper);border:1px solid var(--line);border-radius:9px;padding:1.1rem}
+.project-highlights strong{display:block;font-size:2rem;color:var(--french);line-height:1.2}
+.project-highlights span{font-size:.85rem;color:var(--muted)}
+.material-list{display:grid;gap:1.1rem;margin:1rem 0}
+.material-entry{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(14rem,.8fr);gap:1.4rem;padding:1.3rem;background:var(--paper);border:1px solid var(--line);border-radius:10px}
+.material-entry h3{font-size:1.25rem}.material-entry p{margin:.6rem 0}.material-entry .eyebrow{margin:0 0 .4rem}
+.process-caption{color:var(--muted);font-size:.89rem}.image-placeholders{display:grid;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr));gap:1rem;margin:1.4rem 0}
+.media-slot{display:flex;min-height:14rem;align-items:center;justify-content:center;flex-direction:column;text-align:center;gap:.6rem;padding:1rem;background:linear-gradient(135deg,#f6e7eb,#e8e6f5);border:2px dashed #b7a4b7;border-radius:10px;color:#594358}
+.media-slot.small{min-height:12rem}.media-slot .slot-heading{font-weight:700;color:var(--violet)}.media-slot span:last-child{font-size:.82rem;overflow-wrap:anywhere}.media-slot code{font-size:.8rem}
+.note{border-left:3px solid var(--french);padding:.6rem 1rem;background:var(--paper);color:var(--muted);font-size:.9rem}
+@media(max-width:42rem){.material-entry{grid-template-columns:1fr}.project-highlights{gap:.4rem}.project-highlights>div{padding:.6rem}.project-highlights strong{font-size:1.5rem}}
+
+/* Stylized Island case study */
+.eyebrow{color:var(--french);font-size:.82rem;font-weight:700;letter-spacing:.09em;text-transform:uppercase}
+.project-highlights{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.8rem;margin:1.6rem 0}
+.project-highlights>div{background:var(--paper);border:1px solid var(--line);border-radius:9px;padding:1.1rem}
+.project-highlights strong{display:block;font-size:2rem;color:var(--french);line-height:1.2}
+.project-highlights span{font-size:.85rem;color:var(--muted)}
+.material-list{display:grid;gap:1.1rem;margin:1rem 0}
+.material-entry{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(14rem,.8fr);gap:1.4rem;padding:1.3rem;background:var(--paper);border:1px solid var(--line);border-radius:10px}
+.material-entry h3{font-size:1.25rem}.material-entry p{margin:.6rem 0}.material-entry .eyebrow{margin:0 0 .4rem}
+.process-caption{color:var(--muted);font-size:.89rem}.image-placeholders{display:grid;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr));gap:1rem;margin:1.4rem 0}
+.media-slot{display:flex;min-height:14rem;align-items:center;justify-content:center;flex-direction:column;text-align:center;gap:.6rem;padding:1rem;background:linear-gradient(135deg,#f6e7eb,#e8e6f5);border:2px dashed #b7a4b7;border-radius:10px;color:#594358}
+.media-slot.small{min-height:12rem}.media-slot .slot-heading{font-weight:700;color:var(--violet)}.media-slot span:last-child{font-size:.82rem;overflow-wrap:anywhere}.media-slot code{font-size:.8rem}
+.note{border-left:3px solid var(--french);padding:.6rem 1rem;background:var(--paper);color:var(--muted);font-size:.9rem}
+@media(max-width:42rem){.material-entry{grid-template-columns:1fr}.project-highlights{gap:.4rem}.project-highlights>div{padding:.6rem}.project-highlights strong{font-size:1.5rem}}
+
+/* Island image galleries */
+.island-feature-gallery{grid-template-columns:repeat(auto-fit,minmax(min(100%,23rem),1fr))}
+.island-shot img{width:100%;height:auto;aspect-ratio:16/10;object-fit:contain;background:#f1ecea}
+.island-graph img{aspect-ratio:5/4;object-fit:contain;background:#f4eff0}
+.material-entry .shot{align-self:start}
+
+/* Keeper production evidence */
+.keeper-table-wrap{overflow-x:auto;margin:1rem 0;border-radius:10px;border:1px solid var(--line)}
+.keeper-table{width:100%;border-collapse:collapse;min-width:34rem;background:var(--paper);font-size:.92rem}
+.keeper-table th,.keeper-table td{text-align:left;padding:.8rem 1rem;border-bottom:1px solid var(--line);vertical-align:top}
+.keeper-table th{background:var(--powder);color:var(--violet)}
+.keeper-table tr:last-child td{border-bottom:0}
